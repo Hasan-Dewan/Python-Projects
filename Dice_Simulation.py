@@ -59,11 +59,10 @@ for cheak in dice:
     elif(cheak==6):
         t6+=1
 
-for die in range(5):
-    for line in dice:
-        print(dice_art.get(line)[die], end=" ")
-    print()
-
+for die in range(num_of_dice):
+    print(f"Dice No:{die+1}")
+    for line in dice_art.get(dice[die]):
+        print(line)
 
 print(f"The Probability of getting 1 is {t1/num_of_dice}")
 print(f"The Probability of getting 2 is {t2/num_of_dice}")
